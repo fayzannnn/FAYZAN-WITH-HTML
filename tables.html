@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+    table {
+        border-collapse: collapse;
+        text-align: center;
+        
+    }
+    td,th{
+        border:1px solid black;
+        padding:10px;
+    }
+    tr:nth-child(even){
+        background-color: #979696;
+    }
+    </style>
+</head>
+<body>
+      <!-- shortcut to make tables (table>tr>th*3) -->
+    <table style="width:100%">   
+        <colgroup>
+            <col span="2" style="background-color: #50b1e9"> </colgroup>  
+        <tr>
+            <th>Country</th>
+            <th>Country code</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>IN</td>
+            <td>india@example.com</td>
+        </tr>
+            <tr>
+                <td>united states of america</td>
+                <td>US</td>
+                <td>usa@example.com</td>
+            </tr>
+            <tr>
+                <td>Japan</td>
+                <td>JP</td>
+                <td>japan@example.com</td>
+            </tr>
+            <tr>
+                <td>CHINA</td>
+                <td>CN</td>
+                <td>china@example.com</td>
+            </tr>
+            <tfoot>
+    <tr>
+      <th scope="row" colspan="2" style="background-color: #f2f4f5;"> best</th>
+      <td>INDIA</td>
+    </tr>
+  </tfoot>
+    </table>
+    <br/>
+   <table>
+        <tr>
+            <th colspan="3">Country</th>
+            <td>India</td>
+            <td>Japan</td>
+        </tr>
+        <tr>
+            <th>Country code</th>
+            <td>IN  </td>
+            <td>JP</td>
+        </tr>
+    </table> 
+</body>
+</html>
